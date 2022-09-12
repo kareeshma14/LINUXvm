@@ -8,9 +8,7 @@ pipeline {
     }
     stage ('Build Image') {
       steps {
-       sh '''
-       echo Kareeshmamanohar@09 | sudo -u Kareeshma --stdin
-       sudo docker build  -t kareeshma14/passenger .'''
+       sh '''docker build  -t kareeshma14/passenger .'''
       }
     }
    stage ('Login') {
